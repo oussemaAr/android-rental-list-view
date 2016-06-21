@@ -1,7 +1,7 @@
 package com.example.simon.rentallistview;
 
 //Base class to hold information about our property
-public class Property {
+public class Property implements Serializable  {
 
     //property basics
     private int streetNumber;
