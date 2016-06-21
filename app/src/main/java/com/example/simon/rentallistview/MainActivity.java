@@ -49,12 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 Property property = rentalProperties.get(position);
 
                 Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-                intent.putExtra("streetNumber", property.getStreetNumber());
-                intent.putExtra("streetName", property.getStreetName());
-                intent.putExtra("suburb", property.getSuburb());
-                intent.putExtra("state", property.getState());
-                intent.putExtra("image", property.getImage());
-
+                intent.putExtra("value", property);
                 startActivityForResult(intent, 1000);
             }
         };
